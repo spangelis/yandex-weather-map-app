@@ -93,7 +93,7 @@ class MapCreator(QtWidgets.QMainWindow):
         }
 
         # geocoder
-        API_KEY = "effd3c32-cb80-41ce-a5d7-211dd7dff879"
+        API_KEY = "your key"
         client = Client(API_KEY)
         size = (640, 440)
 
@@ -155,7 +155,7 @@ class MapCreator(QtWidgets.QMainWindow):
                         'thunderstorm-with-rain': ('Дождь с грозой', 7),
                         'thunderstorm-with-hail': ('Гроза с градом', 7)
                         }
-        api_key = "60edebc8-6f4b-4b00-8d52-fa18e36b8639"
+        api_key = "your key"
 
         #check for bad request or no internet
         try:
