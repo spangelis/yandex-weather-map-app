@@ -40,8 +40,8 @@ class MapCreator(QtWidgets.QMainWindow):
 
         # buttons call functions on click
         self.ui.address_input.returnPressed.connect(self.ui.button.click)
-        self.ui.button.clicked.connect(self.get_weather)
         self.ui.button.clicked.connect(self.get_link)
+        self.ui.button.clicked.connect(self.get_weather)
         self.ui.plus.clicked.connect(self.get_link)
         self.ui.minus.clicked.connect(self.get_link)
 
