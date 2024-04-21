@@ -9,10 +9,6 @@ import json
 import os
 
 
-
-
-
-
 class MapCreator(QtWidgets.QMainWindow):
     def __init__(self):
         super(MapCreator, self).__init__()
@@ -93,7 +89,7 @@ class MapCreator(QtWidgets.QMainWindow):
         }
 
         # geocoder
-        API_KEY = "your key"
+        API_KEY = ""
         client = Client(API_KEY)
         size = (640, 440)
 
@@ -155,7 +151,9 @@ class MapCreator(QtWidgets.QMainWindow):
                         'thunderstorm-with-rain': ('Дождь с грозой', 7),
                         'thunderstorm-with-hail': ('Гроза с градом', 7)
                         }
-        api_key = "your key"
+        
+        # Yandex MAPS API
+        api_key = ""
 
         #check for bad request or no internet
         try:
